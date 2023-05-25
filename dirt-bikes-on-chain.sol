@@ -68,7 +68,6 @@ contract DirtBikesSanity is ERC721, Ownable {
     function createDirtBikeStruct(uint256[] memory vin) internal pure returns (DirtBike memory) {
       return
           DirtBike({
-            // fill: ballColors(randomSeed % 33), // Choose random color from bColors array
               background: backgroundColors(vin[0] % 10),
               engine: dirtBikePartsColors(vin[1]), // Choose random color from array
               forks: forkColors(vin[2] % 4),
