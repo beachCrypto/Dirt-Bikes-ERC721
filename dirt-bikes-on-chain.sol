@@ -246,6 +246,7 @@ contract DirtBikesSanity is ERC721, Ownable {
             );
     }
 
+    // Cool Cats Solidity — Random Numbers - https://medium.com/coinmonks/solidity-random-numbers-f54e1272c7dd
     function generateDirtBike(uint256 tokenId) public view returns (DirtBike memory dirtBike){
         uint256 newRandomHash = tokenToHash[tokenId];
 
