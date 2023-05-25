@@ -65,7 +65,6 @@ contract DirtBikesSanity is ERC721, Ownable {
     }
 
     // Create an instance of a DirtBike
-    // function createDirtBikeStruct(uint256[] memory vin) internal pure returns (DirtBike memory) {
     function createDirtBikeStruct(
 
       uint256[] memory vin
@@ -166,7 +165,6 @@ contract DirtBikesSanity is ERC721, Ownable {
         return
             string(
                 abi.encodePacked(
-
                     // <!-- swing arm -->
                     '<rect x="300" y="1000" width="400" height="100" fill="',
                     dirtbike.swingArm,
@@ -200,7 +198,6 @@ contract DirtBikesSanity is ERC721, Ownable {
         return
             string(
                 abi.encodePacked(
-
                     //  <!-- rear fender -->
                     '<rect x="200" y="600" width="300" height="100" fill="',
                     dirtbike.rearFender,
@@ -245,7 +242,6 @@ contract DirtBikesSanity is ERC721, Ownable {
                     '<rect x="800" y="500" width="200" height="100" fill="',
                     dirtbike.handlebars,
                     '" />'
-
                 )
             );
     }
